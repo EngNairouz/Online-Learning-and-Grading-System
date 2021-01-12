@@ -7,7 +7,7 @@
 <?php 
   $usernme= $_POST["usernme"];
   $password= $_POST["password"];
-  if ($usernme == 'teacher' && $password == 'nageeb98')
+  if ($usernme == '' && $password == '')
   { echo("<script>location.href = 'teacher1.php';</script>");
    }
   else {?>
