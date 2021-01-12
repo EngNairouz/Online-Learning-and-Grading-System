@@ -1,0 +1,25 @@
+<?php session_start();?>
+<?php require_once("header.php");?>
+<title>MANAGER</title>
+
+</head>
+
+<div class="m-4"; align="center">
+<?php
+  $usernme= $_POST["usernme"];
+  $password= $_POST["password"] ;
+  if ($usernme == 'محسن محمد' && $password ==352006)
+  {echo("<script>location.href = 'full.php';</script>");
+      }
+  else { ?>
+  <h1>غير مصرح</h1>
+  <div><img src="not.png" alt="not allowed" width="300" height="300"></div>
+  <br>
+  <a href="welcoming.php" class="btn btn-danger btn-lg active" role="button" aria-pressed="true"> الصفحة الرئيسية</a>
+  <?php }
+?>
+
+</div>
+
+
+<?php require_once("footer.php");?>
