@@ -8,7 +8,7 @@
 <?php
   $usernme= $_POST["usernme"];
   $password= $_POST["password"] ;
-  if ($usernme == 'محسن محمد' && $password ==352006)
+  if ($usernme == '' && $password ==)
   {echo("<script>location.href = 'full.php';</script>");
       }
   else { ?>
